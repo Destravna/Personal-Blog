@@ -3,7 +3,7 @@
 <h1>Home</h1>
 <% for(let i = 0;i < t_homeContent.length;i++){ %>
     <h3><%= t_homeContent[i].title %> </h3>
-    <p><%= t_homeContent[i].post.substring(0, 100) + "..."%><a href="/posts/<%-t_homeContent[i].title-%> ">Read More</a> </p>
+    <p><%= t_homeContent[i].post.substring(0, 100) + "..."%><a href="/posts/<%-(t_homeContent[i].title)-%> ">Read More</a> </p>
 <% } %> 
 
 
